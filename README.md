@@ -14,4 +14,4 @@ This webpage is a finalized product of my week three project.
 
 ### Legal
 
-Copyright (c) 2019 @ WD19 
+Copyright @ WD19 
