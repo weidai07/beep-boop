@@ -3,13 +3,11 @@ $(document).ready(function() {
     event.preventDefault();
 
     var total = ("1", "2", "3");
-    var result = "";
-
 
   function number {
 
     if (total === 1) {
-      $(".result").alert("Beep!");
+      $(".result").text("Beep!");
     } else if (total === 2) {
       $(".result").text("Boop!");
     } else if (total === 3) {
@@ -20,7 +18,6 @@ $(document).ready(function() {
     $(".result").show();
   });
 });
-
 
    //  for(i = 0; i < x.length; i++) {
    //   while(x >= y]) {
