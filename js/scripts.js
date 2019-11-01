@@ -4,13 +4,15 @@ $(document).ready(function() {
 
     var total = ("1", "2", "3");
 
-  function number {
+  function number() {
 
     if (total === 1) {
       $(".result").text("Beep!");
-    } else if (total === 2) {
+    }
+    if (total === 2) {
       $(".result").text("Boop!");
-    } else if (total === 3) {
+    }
+    if (total === 3) {
       $(".result").text("I'm sorry, Dave. I'm afraid I can't do that.");
     }
   }
@@ -18,6 +20,3 @@ $(document).ready(function() {
     $(".result").show();
   });
 });
-
-   //  for(i = 0; i < x.length; i++) {
-   //   while(x >= y]) {
