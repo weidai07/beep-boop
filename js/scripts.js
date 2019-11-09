@@ -16,8 +16,9 @@ $(document).ready(function() {
          return $("#result").text("");
      }
    }}
-
-      $("#result").text(results);
+      var type = $("#userInput1");
+      $("#result").text(beep(type));
+      $(".result").show();
 
   });
 });
