@@ -2,21 +2,22 @@ $(document).ready(function() {
   $("form#digit").submit(function(event) {
     event.preventDefault();
 
-    var total = ("1", "2", "3");
+    var results = [];
 
-  function number() {
+    function beep() {
+     for (var i = 0; i <= results.length; i++) {
+       if ((i = 3) === true) {
+         return $("#result").text("I'm sorry, Dave. I'm afraid I can't do that.");
+       } else if ((i = 2) === true) {
+         return $("#result").text("Boop!");
+       } else if ((i = 1) === true) {
+         return $("#result").text("Beep!");
+       } else {
+         return $("#result").text("");
+     }
+   }}
 
-    if (total === 1) {
-      $(".result").text("Beep!");
-    }
-    if (total === 2) {
-      $(".result").text("Boop!");
-    }
-    if (total === 3) {
-      $(".result").text("I'm sorry, Dave. I'm afraid I can't do that.");
-    }
-  }
-    number();
-    $(".result").show();
+      $("#result").text(results);
+
   });
 });
