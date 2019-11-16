@@ -4,21 +4,23 @@ $(document).ready(function() {
 
     var results = [];
 
-    function beep() {
-     for (var i = 0; i <= results.length; i++) {
-       if ((i = 3) === true) {
-         return $("#result").text("I'm sorry, Dave. I'm afraid I can't do that.");
-       } else if ((i = 2) === true) {
-         return $("#result").text("Boop!");
-       } else if ((i = 1) === true) {
-         return $("#result").text("Beep!");
+    function beep(num) {
+      for (var i = 0; i <= num; i++) {
+        results[i] = i + " ";
+        var list = results[i].toString();
+       if (list.includes(3)) {
+         results[i] = "I'm sorry, Dave. I'm afraid I can't do that.";
+       } else if (list.includes(2)) {
+         results[i] = "Boop!";
+       } else if (list.includes(1)) {
+         results[i] = "Beep!";
        } else {
-         return $("#result").text("");
-     }
-   }}
-      var type = $("#userInput1");
-      $("#result").text(beep(type));
-      $(".result").show();
+         return results[i];
+       }
+     }};
+      beep();
+      // console.log(results)
+      $("#result1").show()
 
   });
 });
