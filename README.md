@@ -4,15 +4,20 @@
 
 ## Description
 
-This webpage is a finalized product of my week three project.
+This webpage is a finalized product of my week three project. It demonstrates the proficient use of loops and arrays.
 
 ## Setup
+
+To use this portfolio, download the link from github at https://github.com/weidai07/beep-boop.git, open the index.html file in your web browser and proceed with the following instructions.
 
 * _Enter a number in the box_
 
 * _Click "Submit!" and view the results_
 
 ### Specification
+
+This website will take the integer the user inputs, starting from 0, and convert it into a string. Next, the program will take the integer the user inputs and check specifically for the integers 1, 2, and 3. If a 1 is identified, the program will convert the integer 1 into 'Beep!'. If a 2 is identified, the program will convert the integer 2 into 'Boop!'. If a 3 is identified, the program will convert the integer 3 into 'I'm sorry, Dave. I'm afraid I can't do that!'.
+
 | Input | Output |
 | :-------------     | :------------- | :------------- |
 | 1 | "Beep!" |
